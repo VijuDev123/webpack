@@ -4,6 +4,7 @@ import globals from "globals";
 import tseslint from "typescript-eslint";
 import pluginReact from "eslint-plugin-react";
 import jest from 'eslint-plugin-jest'
+import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 
 export default [
   // Base JavaScript rules
@@ -21,6 +22,7 @@ export default [
     }
   },
  jest.configs['flat/style'],
+eslintPluginPrettierRecommended,
 
   // TypeScript rules
   ...tseslint.configs.recommended,
