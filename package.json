@@ -1,0 +1,29 @@
+{
+  "name": "sm_fe_tooling_v4",
+  "version": "1.0.0",
+  "description": "Modern JavaScript Tooling by theSeniorDev",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "build": "webpack",
+    "dev": "webpack serve --mode production",
+    "test:task_2": "jest task_2.spec.js",
+    "test:task_3": "jest task_3.spec.js",
+    "test:task_4": "jest task_4.spec.js",
+    "test:task_5": "jest task_5.spec.js",
+    "test:task_6": "jest task_6.spec.js"
+  },
+  "author": "theSeniorDev - all rights reserved",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.6",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "webpack": "^5.101.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
