@@ -9,13 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.jsx":
+/***/ "./src/index.tsx":
 /*!***********************!*\
-  !*** ./src/index.jsx ***!
+  !*** ./src/index.tsx ***!
   \***********************/
 /***/ (() => {
 
-eval("{throw new Error(\"Module parse failed: Unexpected token (5:8)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n| function App() {\\n|     return (\\n>         <div>\\n|             <h3>Hello There! What is your name?</h3>\\n|             <input/>\");\n\n//# sourceURL=webpack://sm_fe_tooling_v4/./src/index.jsx?\n}");
+eval("{throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: \\u001b[31merror while parsing tsconfig.json\\u001b[39m\\n    at Object.loader (C:\\\\src\\\\TheSeniordev\\\\webpack\\\\node_modules\\\\ts-loader\\\\dist\\\\index.js:18:18)\");\n\n//# sourceURL=webpack://sm_fe_tooling_v4/./src/index.tsx?\n}");
 
 /***/ })
 
@@ -26,7 +26,7 @@ eval("{throw new Error(\"Module parse failed: Unexpected token (5:8)\\nYou may n
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/index.jsx"]();
+/******/ 	__webpack_modules__["./src/index.tsx"]();
 /******/ 	
 /******/ })()
 ;
