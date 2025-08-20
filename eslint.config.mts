@@ -3,8 +3,9 @@ import js from "@eslint/js";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 import pluginReact from "eslint-plugin-react";
-import jest from 'eslint-plugin-jest'
+import jest from "eslint-plugin-jest";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
+import jsxA11y from "eslint-plugin-jsx-a11y";
 
 export default [
   // Base JavaScript rules
@@ -13,17 +14,16 @@ export default [
     languageOptions: {
       ecmaVersion: "latest",
       sourceType: "module",
-      globals: globals.browser
+      globals: globals.browser,
     },
     rules: {
       ...js.configs.recommended.rules,
       indent: ["error", 2], // ⬅️ 2 spaces
-
-    }
+    },
   },
- jest.configs['flat/style'],
-eslintPluginPrettierRecommended,
-
+  jest.configs["flat/style"],
+  eslintPluginPrettierRecommended,
+  jsxA11y.flatConfigs.recommended,
   // TypeScript rules
   ...tseslint.configs.recommended,
 
@@ -31,7 +31,7 @@ eslintPluginPrettierRecommended,
   {
     ...pluginReact.configs.flat.recommended,
     settings: {
-      react: { version: "detect" }
-    }
-  }
+      react: { version: "detect" },
+    },
+  },
 ];
